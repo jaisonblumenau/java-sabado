@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // informar moedas valor
+        var centav01 = prompt ("informe moedas de 01 centavo")
+        var centav05 = prompt("informe moedas de 05 centavos")
+        var centav10 = prompt("informe moedas de 10 centavos")
+        var centav25 = prompt("informe moedas de 25 centavos")
+        var centav50 = prompt("infoem moedas de 50 centavos")
+        var real1 = prompt("informe moedas de 1 real")
+
+
+        var total = (centav01 * 0.01) + (centav05 * 0.05) + (centav10 * 0.10) + (centav25 * 0.25) + (centav50 * 0.50)+ (real1 * 1.00)
+        document.write(total.toFixed(2))
+        
+    </script>
+
+        
+    
+</body>
+</html>

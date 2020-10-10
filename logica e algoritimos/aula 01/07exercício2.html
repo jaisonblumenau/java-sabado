@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // informar número do pedido
+        var nome = prompt ("Informe o pedido: 1) Pizza 2) Pão de Queijo 3) Macarrão 4) Pastel")
+        var valor = parseFloat(prompt("informe o valor do pagamento"))
+
+        if(nome == 1){
+            document.write("Você escolheu: Pizza")
+            var troco = (valor - 12)
+
+            if(troco < 0){
+                document.write("O cliente informou um valor abaixo do pedido")
+            }else{
+                document.write("<br>Troco R$ " + troco)
+            }
+        }if(nome == 2){
+            document.write("você escolheu Pão de Queijo")
+            var troco = (valor - 4)
+
+            if (troco< 0){ 
+                document.write("o cliente informou um valor abaixo do pedido")              
+            }else{
+                document.write("<br>troco R$ " + troco)
+            }
+           
+        }if(nome == 3){
+            document.write("você escolheu Macarrão")
+            var troco = (valor - 16)
+
+            if (troco < 0){
+                document.write("o cliente informou um valor abaixo do pedido")
+            }else{
+                document.write("<br>troco R$ " + troco)
+            }
+            
+
+        }if(nome == 4){
+            document.write("você escolheu Pastel")
+            var troco = (valor - 4.50)
+
+            if(troco < 0){
+                document.write("o cliente informou um valor abaixo do pedido")
+            }else{
+                document.write("<br>troco R$ " + troco)
+            }
+            
+        }
+        
+    </script>
+    
+</body>
+</html>

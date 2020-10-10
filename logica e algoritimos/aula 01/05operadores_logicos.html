@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operadores lógicos</title>
+
+    <script>
+        // operadores lógicos
+        // && - E
+        // || - OU
+        // !  - NÃO 
+
+        // Obter o valor da compra
+        var valor = parseFloat(prompt("informe o valor do produto"))
+
+        // verificar se pagou a vista
+        var pagamento = confirm("pagamento a vista?")
+        
+        // condicional
+        if(valor >= 500 && pagamento == true){
+            document.write("desconto de 10%, total a pagar R$ " + (valor * 0.9))
+        }else{
+            document.write("sem desconto, total R$ " + valor)
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
