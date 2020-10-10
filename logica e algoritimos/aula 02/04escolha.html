@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>escolha</title>
+</head>
+<body>
+    
+    <!-- JS -->
+    <script>
+        // contadores
+        var blumenau = 0, joinville = 0, indaial = 0;
+
+        // laço
+        do{
+            // pergunta
+            var cidade = parseInt(prompt("1) blumenau \ 2) joinville \ 3) indaial"))
+
+            // contar votos
+            switch(cidade){
+                case 1:
+                blumenau++
+                break
+
+                case 2:
+                joinville++
+                break
+
+                default:
+                indaial++
+            }
+
+        }while(confirm("deseja continuar?"))
+
+        // exibir os votos
+        document.write("blumenau" + blumenau + "<br>")
+        document.write("joinville" + joinville + "<br>")
+        document.write("indaial" + indaial)
+
+    </script>
+</body>
+</html>
