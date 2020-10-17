@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 exercício</title>
+
+    <script>
+
+        // vetor
+        var numeros = []
+
+        var numero
+
+        var indice = 0
+
+        for(var indice = 0; indice < 5; indice++){
+            numeros[indice] = prompt("informe o "+(indice+1)+"º número")
+        }     
+        var existe = false
+        
+        for(var indice = 0; indice <numeros.length; indice++)
+        if(numeros[indice] == 10){
+            document.write("o número dez está na "+(indice+1)+" posição<br>")
+            existe = true
+        }
+        }
+        if(existe == false){
+            document.write("o número dez não foi informado")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

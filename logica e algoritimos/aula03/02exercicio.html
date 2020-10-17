@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 exercício</title>
+</head>
+<body>
+    
+    <!-- js -->
+    <script>
+        // vetor de números
+        var numeros = []
+
+        // obter os cinco números
+        for(var indice=0; indice<5; indice++){
+            numeros[indice] = parseInt(prompt("informe o"+(indice+1)+"º numero"))
+        }
+
+        // calcular
+        var soma =0
+        for(var indice=0; indice<5; indice++){
+            soma += numeros[indice]
+        }
+
+        // media
+        var media = soma /5
+
+        // exibir média
+        document.write("a media dos valores é"  + soma)
+
+        // exibir números maiores ou igual a média
+       for(var indice = 0; indice < 5; indice ++){
+       if (numeros[indice] >=media){
+           document.write(numeros[indice]+ "é maior ou igual que a media.<br>")
+       }
+       }
+        
+        
+    </script>
+</body>
+</html>

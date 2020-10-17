@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 exercício</title>
+
+    <!-- Js -->
+<script>
+    // vetor
+    var numeros = []
+
+    var numero
+    
+    // obtenção dos números
+        
+    do{
+         numero = prompt("informe um número")
+        
+    if(numero !=0){
+        numeros.push(numero)
+    }
+    }while(numero !=0)
+
+    // quantidade de pares, ímpares, positivos e negativos
+    var pares = 0
+    var impares  = 0
+    var positivos = 0
+    var negativos = 0
+
+    // contabilizar
+    for(var i=0; i<numeros.length; i++){
+        if(numeros[i] > 0){
+            positivos++
+        }else{
+            negativos++
+        }
+
+        if(numeros[i] % 2 == 0){
+            pares++
+        }else{
+            impares++
+        }
+
+    }
+
+    document.write("Par: "+pares + "<hr>")
+    document.write("Ímpar "+impares + "<hr>")
+    document.write("Negativo "+negativos + "<hr>")
+    document.write("Ímpar "+positivos + "<hr>")
+    
+</script>
+</head>
+<body>
+    
+</body>
+</html>

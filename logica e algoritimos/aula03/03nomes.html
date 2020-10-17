@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 - nomes</title>
+
+    <!-- js -->
+    <script>
+
+        // vetor de nomes
+        var nomes = []
+
+        // função de cadastro
+        function cadastrar(){
+
+            //obtem o nome digitado
+            var campo_nome = document.getElementById("campo_nome")
+
+            // validar se o campo nome está vazio e se há pelo menos três caracteres
+            if(campo_nome.value == ""){
+                alert("favor informar um nome")
+            }else if(campo_nome.value.length < 3){
+                alert("favor informar um nome com pelo menos três caracteres")
+            }else{
+
+            //cadastrar no vetor
+            nomes.push(campo_nome.value)
+
+            // limpar campo
+            campo_nome.value = ""
+
+            // adicionar o cursor no campo
+            campo_nome.focus()
+
+            // atualiza a listagem de nomes
+            listar()
+
+        }
+        }
+
+        // função para listar os nomes
+        function listar(){
+
+            // obter o elemento lista
+            var lista = document.getElementById("lista")
+
+            // limpar o conteúdo da lista
+            lista.innerHTML = ""
+
+            // laço de repetição 
+            for(var linha=0; linha<nomes.length; linha++){
+                lista.innerHTML += nomes[linha] 
+                lista.innerHTML += " <button onclick='remover("+linha+")'>remover</button>" 
+                lista.innerHTML += "<hr>"
+            }
+
+        }
+
+        // função para remover
+        function remover(indice){
+            // remover o nome do vetor
+            nomes.splice(indice, 1)
+            // atualizar
+            listar()
+        }
+
+        
+        
+    </script>
+</head>
+<body>
+
+ <!-- formulário -->
+ 
+ <form>
+     <input type="text" id="campo_nome" placeholder="informe um nome">
+     <input type="button" onclick="cadastrar()" value="cadastrar">
+     
+
+ </form>
+
+ <!-- listagem de nomes -->
+ <div id="lista"></div>
+    
+</body>
+</html>

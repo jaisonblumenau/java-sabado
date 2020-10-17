@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 exercício</title>
+
+    <script>
+
+        // vetor
+        var numeros = []
+
+        var numero
+
+        var indice = 0
+
+        do{
+         numero = prompt("informe o "+(indice+1)+" numero") 
+
+        var existe = false
+
+         for(var i=0; i<numeros.length; i++){
+            if(numeros[i] == numero){
+                existe = true
+            }
+         }
+
+         if(existe==true){
+             alert("O número já existe")
+         }else{
+             numeros.push(numero)
+             indice++
+         }
+                       
+        }while(indice < 5)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
