@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08 - Template</title>
+
+    <style>
+        /*Padronizar tags*/
+        *{
+            margin: 0px;
+            padding: 0px;
+            font: 14px verdana;
+        }
+
+        /*Cabeçalho*/
+        header{
+            background-color: black;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        header div{
+            float: left;
+            margin: 20px;
+            font-size: 26px;
+        }
+
+        header nav{
+            float: right;
+        }
+
+        header a{
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 27px 10px;
+        }
+
+        header a:hover{
+            background-color: rgb(255, 0, 98);
+        }
+
+        /*Banner*/
+        .banner{
+            background-color: aquamarine;
+            font-size: 36px;
+            text-align: center;
+            padding: 170px;
+        }
+
+        /*principal*/
+        main{
+            width: 1200px;
+            margin: 10px auto;
+            background-color: aliceblue;
+        }
+        section h1{
+            font-size: 32px;
+            width: 450px;
+            border-bottom: solid 3px red;
+            padding: 30px 0px 0px 30px;
+            display: block;
+        }
+
+        .municipal div{
+            background-color: blueviolet;
+            width: 580px;
+            height: 300px;
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+        .estadual div{
+            background-color: rgb(7, 58, 105);
+            width: 580px;
+            height: 300px;
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+        .nacional div{
+            background-color: rgb(43, 226, 195);
+            width: 580px;
+            height: 300px;
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        /*rodapé*/
+        footer{
+            text-align: center;
+            background-color: black;
+            color: #fff;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        </style>
+</head>
+<body>
+
+    <!--Cabeçalho-->
+    <header>
+      <div>Logo</div>
+
+    <!--Navegação-->
+      <nav>
+          <a href="#">Início</a>
+          <a href="#">Sobre</a>
+          <a href="#">Clientes</a>
+          <a href="#">Blog</a>
+          <a href="#">Contato</a>
+      </nav>
+    </header>
+
+    <!--Banner-->
+    <div class="banner">banner</div>
+
+    <!--Conteúdo principal-->
+    <main>
+
+        <!--Sessão municipal-->
+        <section class="municipal">
+            <h1>Notícias Municipais</h1>
+            <div></div>
+            <div></div>
+        </section>
+
+        <!--Sessão estadual-->
+        <section class="estadual">
+            <h1>Notícias Estaduais</h1>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <!--Sessão nacional-->
+        <section class="nacional">
+            <h1>Notícias Nacionais</h1>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </main>
+
+    <!--rodapé-->
+    <footer>
+        Template - 2020
+    </footer>
+
+</body>
+</html>

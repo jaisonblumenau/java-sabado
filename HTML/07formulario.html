@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07 - Formulário</title>
+
+    <style>
+
+           /* Colorzilla: https://www.colorzilla.com */
+
+        /*Padronizar tags*/
+        *{
+            margin: 0px;
+            padding: 0px;
+            font: 14px sans-serif;
+            box-sizing: content-box;
+        }
+        /*body*/
+        body{
+            background-image: url(dark-honeycomb.png);
+        }
+
+        /*Formulário*/
+        form{
+            width: 500px;
+            background-color: #e8e8e8;
+            margin: 30px auto;
+            border: 1px solid #999;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        form > label{
+            background-color: #fff;
+            padding: 10px;
+            display: inline-block;
+            width: 48px;
+            margin-bottom: 3px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        form > input{
+            background-color: #fff;
+            padding: 10px;
+            border: none;
+            width: 160px;
+            height: 16px;
+            margin-bottom: 3px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px
+        }
+        
+        form > select{
+            background-color: #fff;
+            padding: 10px;
+            border: none;
+            width: 160px;
+            height: 16px;
+            margin-top: 1px;
+            margin-bottom: 3px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px
+        }
+
+        fieldset{
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 10px;
+        }
+
+        textarea{
+            width: 476px;
+            height: 130px;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 10px;
+            margin-top: 10px;
+            resize: none;
+        }
+
+        input[type="submit"],
+        input[type="button"],
+        input[type="reset"]{
+            border-radius: 5px;
+            width: 140px;
+            margin-left: 2px;
+            margin-top: 10px;
+            background: linear-gradient(to bottom, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%);
+            color: #213303;
+        }
+        
+        img{
+            width: 200px;
+            margin-left: 150px;
+            display: block;
+            margin-bottom: 40px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+<form action="http://www.google.com">
+    
+    <img src="iconfinder_administrator_43663.png" alt="">
+    
+    <label>Nome</label><input type="text" placeholder="Nome" required>
+
+    <label>E-Mail</label><input type="email" required>
+
+    <label>Data</label><input type="date" required>
+
+    <label>Turno</label><select>
+        <option>Matutino</option>
+        <option>Vespertino</option>
+        <option>Noturno</option>
+    </select>
+    
+
+    <fieldset>
+        <legend>Cidade</legend>
+
+        <input type="checkbox">
+        <label>Blumenau</label>
+
+        <input type="checkbox">
+        <label>Indaial</label>
+
+        <input type="checkbox">
+        <label>Pomerode</label>
+    </fieldset>
+
+<fieldset>
+    <legend>Pagamento</legend>
+
+    <input type="Radio" name="pagamento">
+    <label>À vista</label>
+
+    <input type="Radio" name="pagamento">
+    <label>À prazo</label>
+    
+</fieldset>
+
+<textarea placeholder="Mensagem"></textarea>
+
+
+<input type="submit" value="Enviar para o Google">
+<input type="button" value="Executa via JS">
+<input type="reset" value="Limpar campos">
+</form>
+
+</body>
+</html>
