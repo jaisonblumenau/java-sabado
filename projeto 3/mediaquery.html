@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .painel{
+            width: 100vw;
+            height: 100vw;
+        }
+
+        @media screen and (max-width: 600px){
+            .painel{
+                background-color: indigo;
+            }
+        }
+
+        @media screen and (min-width: 601px){
+            .painel{
+                background-color: green;
+            }
+        }
+
+        @media screen and (min-width: 920px){
+            .painel{
+                background-color: blue;
+            }
+        }
+
+        @media screen and (min-width: 1200px){
+            .painel{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+   <div class="painel"></div>
+
+</body>
+</html>

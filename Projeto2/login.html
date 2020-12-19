@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@400;800&family=Roboto:wght@100;400;900&display=swap"
+    rel="stylesheet" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 360px;
+            height: 310px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        .card form{
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+        input, button{
+            height: 40px;
+        }
+        input{
+            font-size: 20px;
+            padding: 5px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #adabab;
+            outline-width: 1px;
+        }
+        button{
+            font-size: 18px;
+            margin-top: 10px;
+            background-color: #00695c;
+            color: #ffff;
+            border: none;
+            transition: all 0.5s ease-in-out;
+        }
+        button:active,
+        button:hover{
+            background-color: #004d40;
+            border: none;
+            transform: scale(1.03);
+        }
+        .card form a{
+            text-decoration: none;
+            color: #333;            
+        }
+        .card > header h1{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 64px;
+            color: #333;
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+         <header>
+             <h1>Meu App</h1>
+         </header>
+         <section>
+             <form action="">
+                 <label>Email</label>
+                 <input type="text">
+                 <label>Senha</label>
+                 <input type="password">
+                 <a href="#">Recuperar Senha</a>
+                 <button>Entrar</button>
+             </form>
+         </section>
+        </div>
+    </div>
+</body>
+</html>

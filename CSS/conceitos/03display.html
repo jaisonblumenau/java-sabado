@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <!--CSS-->
+
+    <style>
+        .grupo{
+            border: 1px solid black;
+            height: 400px;
+            display: flex;
+            justify-content: space-around; /* Alinhamento horizontal*/
+            align-items: center; /* Alinhamento vertical*/
+            
+        }
+
+        .grupo div{
+            width: 300px;
+            height: 200px;
+            background-color: red;
+            border: 1px solid green;
+            
+
+            /*
+            Flex: elemento 
+            Block: Elementos ficam um abaixo do outro
+
+            Inline: Elementos ficam um ao lado do outro, porém, dimensões e margens (topo inferior não funcionam)
+
+            Inline-block: Elementos ficam um ai lado do outro e podem ter dimensões definidas, 
+            além de todas as margens
+            */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="grupo">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+    </div>
+</body>
+</html>

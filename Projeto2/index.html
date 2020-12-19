@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu blog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@400;800&family=Roboto:wght@100;400;900&display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body>header {
+
+            width: 100%;
+            height: 250px;
+            background-color:#81C784;
+            padding-top: 100px;
+            padding-left: 50px;
+            text-align: center;
+        }
+
+        body>header h1 {
+            max-width: 730px;
+            margin: 20px auto;
+            font-size: 80px;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+        }
+
+        .post {
+            width: 730px;
+            margin: 10px auto;
+            padding: 25px;
+            padding-left: 30px;
+            box-shadow: 1px 1px 10px 0 rgba(32, 33, 36, 0.1);
+        }
+
+        .post .post_header h3 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 36px;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 10px;
+            color: #0e293c;
+        }
+        .post .post_header h4 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: normal;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #999;
+        }
+        .post_content p{
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+            text-align: justify;
+            text-indent: 50px;
+        }
+        .post_footer{
+            margin-top: 10px;
+            text-align: right;
+        }
+        .bnt_link{
+            border: none;
+            background-color: #2ca089;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .bnt_link::first-letter{
+            text-transform: capitalize;
+        }
+        .bnt_link:hover{
+            background-color: #0e293c;
+        }
+        .post .post_content p{
+            color: #777;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Blog</h1>
+    </header>
+
+    <main>
+        <article class="post">
+            <header class="post_header">
+                <h3>Ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <h4>Apex Ensino</h4>
+                <h4>01/05/2020</h4>
+            </header>
+            <section class="post_content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo aliquam et, deserunt cupiditate non
+                    laboriosam animi excepturi eligendi, ad itaque, velit inventore magnam! Explicabo blanditiis
+                    molestias corrupti illo temporibus qui.</p>
+            </section>
+            <footer class="post_footer">
+                <a href="#" class="bnt_link">continuar lendo</a>
+            </footer>
+        </article>
+
+        <article class="post">
+            <header class="post_header">
+                <h3>Ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <h4>Apex Ensino</h4>
+                <h4>01/05/2020</h4>
+            </header>
+            <section class="post_content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo aliquam et, deserunt cupiditate non
+                    laboriosam animi excepturi eligendi, ad itaque, velit inventore magnam! Explicabo blanditiis
+                    molestias corrupti illo temporibus qui.</p>
+            </section>
+            <footer class="post_footer">
+                <a href="#" class="bnt_link">continuar lendo</a>
+            </footer>
+        </article>
+    </main>
+
+</body>
+
+</html>

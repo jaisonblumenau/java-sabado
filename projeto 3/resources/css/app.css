@@ -1,0 +1,150 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.body{
+background-color: #f1f1f1;
+}
+.avatar{
+    position: relative;
+}
+.avatar img{
+    width: 100%;
+}
+.avatar > h3{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.fg-green{
+    color: #009688;
+}
+.fg-gray{
+    color: #777;
+}
+.panel-content{
+    padding: 5px 15px;
+}
+.item-with-icon{
+    line-height: 1.5;
+}
+.item-with-icon i{
+    display: inline-block;
+    margin-right: 15px;
+
+}
+.separator{
+    border: 1px solid #f1f1f1;
+    width: calc(100% - 30px)
+    height: 2px;
+    margin: 25px;
+}
+.progressbar{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 15px;
+    height: 25px;
+    overflow: hidden;
+    background-color: #ddd;
+}
+[class|="inner-progressbar"]{
+    background-color: #009688;
+    color: #fff;
+    text-align: right;
+    padding-right: 15px;
+    border-radius: 15px;
+    height: 25px;
+}
+.inner-progressbar-90{
+    width: 90%;
+}
+.progress-title{
+    margin: 20px 0px;
+    color: #757575;
+}
+.inner-progressbar-80{
+    width: 80%;
+}
+.inner-progressbar-75{
+    width: 75%;
+}
+.inner-progressbar-50{
+    width: 50%;
+}
+.inner-progressbar-100{
+    width: 100%;
+}
+.inner-progressbar-50{
+    width: 50%;
+}
+.inner-progressbar-25{
+    width: 25%;
+}
+.card{
+    padding-bottom: 15px;
+    margin: 20px 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 2), 0 4px 20px 0 rgba(0, 0, 0, 19) ;
+}
+.title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #757575;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.subtitle{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #757575;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.date{
+    color: #009688;
+    line-height: 1.2;
+}
+.date i{
+    display: inline-block;
+    margin-right: 20px;
+}
+.date .active{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #009688;
+    color: #fff;
+}
+.content{
+    margin: 15px 0;
+    font-size: 0.9rem;
+    text-align: justify;
+    
+}
+footer{
+    width: 100%;
+    padding: 20px;
+    font-size: 30px;
+    background-color: rgb(2, 102, 2);
+    text-align: center;
+}
+@media screen and (min-width: 610px){
+    .col-left{
+        width: 28vw;
+        float: left;
+    }
+    .col-content{
+        width: 70vw;
+        float: left;
+    }
+    .col-footer{
+        clear: both;
+    }
+    
+   
+   }

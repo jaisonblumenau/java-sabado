@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <!--css-->
+    <Style>
+
+/*pequena*/
+@media screen and (max-width: 600px){
+    body{background-color: yellow;}
+    h1::after{content: "pequena";}
+   }
+
+/*média*/
+@media screen and (min-width: 601px) and (max-width: 999px){
+    body{background-color: green;}
+    h1::after{content: "média";}
+}
+
+/*grande*/
+@media screen and (min-width: 1000px){
+    body{background-color: purple;}
+    h1::after{content: "grande";}
+}
+
+    </Style>
+</head>
+<body>
+    
+<h1>Tipo da resolução: </h1>
+
+</body>
+</html>

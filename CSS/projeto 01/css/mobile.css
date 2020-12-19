@@ -1,0 +1,114 @@
+/* Topo */
+header{
+flex-direction: column;
+align-items: center;
+}
+
+header nav{
+margin-top: 20px;
+}
+
+/*Conteúdo principal*/
+main{
+   text-align: center;
+
+}
+
+    .pacotes ul{
+
+    list-style: none;
+}
+
+.pacotes li{
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 15px rgb(78, 77, 77);
+}
+
+.pacotes img{
+    width: 250px;
+}
+.contato{
+    text-align: center;
+}
+.contato iframe{
+    width: 470px;
+    height: 400px;
+   
+}
+.contato form{
+    margin-top: 20px;
+    width: 470px;
+    display: inline-block;
+    background-color: rgb(209, 252, 252);
+}
+
+.contato input[type="text"],
+.contato input[type="email"],
+.contato textarea{
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin: 10px;
+    width: 450px;
+}
+
+.contato textarea{
+    height: 120px;
+    resize: none;
+}
+
+.contato input[type="sumit"]{
+    background-color: #00adb5;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #393e46;
+    border-radius: 5px;
+    color: #eeeeee;
+    width: 120px;
+  }
+
+
+  .sobre h1{
+    background-color: rgb(180, 184, 190);
+    font-style: italic;
+   
+}
+.sobre h2{
+    background-color: rgb(180, 184, 190);
+    font-style: italic;
+}
+.sobre img{
+    width: 980px;
+    height: 350px;
+}
+
+.blog > p{
+    font-size: 40px;
+}
+.blog > div> p{
+    font-size: 20px;
+}
+
+.blog div{
+    border-bottom: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;    
+
+}
+
+.blog img{
+    width: 350px;
+}
+
+.blog div > p{
+    background-color: rgb(0, 183, 255);
+}
+.semFundo{
+    background-color: white !important;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <!--CSS-->
+
+    <style>
+        /*.principal p{color: red; } todos os <p> dentro da classe terão cor vermelha*/
+
+            .principal > div > p{color: red;}
+
+            .principal > p::after{
+                content: "seletor AFTER";
+                       }
+            .principal > p::before{
+                content:"seletor BEFORE" ;
+            }
+
+            input[type="text"],
+            input[type="password"]{
+                border: 1px solid red;
+            }
+    </style>
+</head>
+<body>
+    <p>Texto fora das divs</p>
+    
+    <div class="principal">
+        <p> - Texto dentro da div - </p>
+     <div>
+         <p>Texto dentro de outra div</p>
+     </div>
+
+    </div>
+    <hr>
+
+    <form>
+        <input type="text" placeholder="Nome">
+        <input type="password" placeholder="Senha">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
